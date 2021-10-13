@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+  }
+
+p{
+    font-family: Arial;
+  }
+
+h1{
+  color: hotpink;
+  text-align: center;
+}
+
+.pinkBox{
+  display: grid; margin:0 auto;
+  color: hotpink;
+  font-size: 24px;
+  border-style:solid;
+  width:750px;
+  height:800px;
+  border-color: hotpink;
+}
