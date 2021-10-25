@@ -1,1 +1,1 @@
-# https://jonpier.github.io/
+# jonpier.github.io/
