@@ -18,7 +18,7 @@ const JohnObject={
       console.log(`${this.firstName} is less than 16 years old`);
     }
     else{
-      console.log(`${this.firstName} has ${65-(this.currentYear-this.birthYear)} years left to gradute.`);
+      console.log(`${this.firstName} has ${65-(this.currentYear-this.birthYear)} years left to retire.`);
         }
       }
   }
