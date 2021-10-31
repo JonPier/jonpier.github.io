@@ -1,58 +1,104 @@
-// A--------------------------
+//A.---------------
+console.log(`A.\n`);
+//retirementAge=65;
 
-console.log("A.");
-let nets_avg=(97+112+101)/3;
-nets_avg=nets_avg.toFixed(2);
-
-let knicks_avg=(109+95+106)/3;
-knicks_avg=knicks_avg.toFixed(2);
-
-if (nets_avg>knicks_avg && nets_avg>=100) {
-    console.log(`The Nets win with a ${nets_avg} average. `);
+const JohnObject={
+  firstName: "John",
+  lastName: "Jones",
+  birthYear: 1994,
+  address: "222-123 45th Ave",
+  job:"taxidermist",
+  email:"john.j@gmail.com",
+  currentYear: 2021,
+  retireYear:function(){
+    if((this.currentYear-this.birthYear)>=65){
+      console.log(`${this.firstName} is retired`)
+    }
+    else if ((this.currentYear-this.birthYear)<=15) {
+      console.log(`${this.firstName} is less than 16 years old`);
+    }
+    else{
+      console.log(`${this.firstName} has ${65-(this.currentYear-this.birthYear)} years left to gradute.`);
+        }
+      }
   }
-  else if (knicks_avg>nets_avg && knicks_avg>=100) {
-    console.log(`The Knicks win with a ${knicks_avg} average. `);
-  }
-  else if (knicks_avg===nets_avg && knicks_avg>100 && nets_avg>100) {
-    console.log(`They're tied with ${knicks_avg} and ${nets_avg} average. `);
-  }
-  else
-    console.log(`Nobody Wins! `);
+JohnObject.retireYear();
+console.log(`\n`);
 
+//B.-------------------
+console.log(`B.\n`);
+//formula_to_Fahrenheit = tempCelsius*9/5+32;
 
-// B----------------------
-console.log("\n\nB.\n");
-let bill=275;
-let tip;
+const display4Fahrenheit=function(){
+  let celTemp=[];
+  celTemp.push(prompt(`Enter a celsius degree: `))
+  celTemp.push(prompt(`Enter a celsius degree: `))
+  celTemp.push(prompt(`Enter a celsius degree: `))
+  celTemp.push(prompt(`Enter a celsius degree: `))
+  //console.log(celTemp[0]);
 
-switch (true){
-  case bill>=30 && bill<=300:
-    tip=bill*0.15;
-    break;
-  default:
-    tip=bill*0.20;
-  }
-
-let total=bill+tip;
-
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${total}`)
-
-
-//C------------------------
-console.log("\n\nC.\n");
-
-function celsiusToFahrenheit (temp){
-  let celsiusConvert= temp*9/5+32;
-  console.log(`${temp}°C is ${celsiusConvert}°F`);
+  let convertedTemp=[];
+  convertedTemp.push(...celTemp);
+  convertedTemp[0]=convertedTemp[0]*9/5+32;
+  convertedTemp[1]=convertedTemp[1]*9/5+32;
+  convertedTemp[2]=convertedTemp[2]*9/5+32;
+  convertedTemp[3]=convertedTemp[3]*9/5+32;
+  console.log(`We have converted the temperatures ${celTemp[0]}°C, ${celTemp[1]}°C, ${celTemp[2]}°C and ${celTemp[3]}°C to Fahrenheit upon your request, they are ${convertedTemp[0]}°F, ${convertedTemp[1]}°F, ${convertedTemp[2]}°F and ${convertedTemp[3]}°F`);
 }
 
-function fahrenheitToCelsius(temp) {
-  let fahrenheitConvert= (temp-32)*5/9;
-  console.log( `${temp}°F is ${fahrenheitConvert}°C`);
+display4Fahrenheit();
+console.log(`\n`);
+
+//C.-----------------
+console.log(`C.\n`);
+//BMI_formula=mass/height**2
+// BMI is less than 18.5,underweight range.
+// BMI is 18.5 to 24.9, Healthy Weight range.
+// BMI is 25.0 to 29.9, overweight range.
+// BMI is 30.0 or higher, obese range.
+let MarkObject={
+  name:'Mark',
+  mass: 92,
+  height:1.85,
 }
 
-let tempCelsius= 30;
-let tempFahrenheit = 86;
+let LucasObject={
+  name:'Lucas',
+  mass: 78,
+  height:1.90,
+}
 
-celsiusToFahrenheit(tempCelsius);
-fahrenheitToCelsius(tempFahrenheit);
+let JonObject={
+  name:'Jon',
+  mass: 90,
+  height:1.69,
+}
+
+const checkBMI=(mass,height)=>{
+  let bmi=mass/height**2;
+  bmi=bmi.toFixed(2);
+  return bmi;
+}
+
+let storeBMI=[];
+storeBMI.push(checkBMI(MarkObject.mass, MarkObject.height));
+storeBMI.push(checkBMI(LucasObject.mass, LucasObject.height));
+storeBMI.push(checkBMI(JonObject.mass, JonObject.height));
+
+let healthDetail=(name,bmi)=>{
+  if (bmi<18.5){
+        console.log(`${name} BMI is ${bmi}, and ${bmi} is underweight based the body fat indicator, It is recommended to check more details with a doctor.`);
+      }
+      else if ((bmi>=18.5)&&(bmi<=24.9)){
+      console.log(`${name} BMI is ${bmi}, and Congrats! ${bmi} body weight is ideal.`);
+      }
+      else if ((bmi>=25)&&(bmi<=29.9)){
+        console.log(`${name} BMI is ${bmi}, and ${bmi}is overweight based on our body fat indicator. It is recommended to check more details with a doctor.`);
+      }
+      else{
+        console.log(`${name} BMI is ${bmi}, and ${bmi} is obesity based on our body fat indicator, please try to see a doctor!!`);
+      }
+}
+healthDetail(MarkObject.name,storeBMI[0]);
+healthDetail(LucasObject.name,storeBMI[1]);
+healthDetail(JonObject.name,storeBMI[2]);
