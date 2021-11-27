@@ -1,1 +1,1 @@
-# https://jonpier.github.io/QUIZ2/quiz_2.html
+# https://jonpier.github.io/QUIZ_2/quiz_2.html
