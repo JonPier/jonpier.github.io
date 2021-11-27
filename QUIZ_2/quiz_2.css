@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+  }
+
+  p{
+    font-family: Arial;
+  }
+
+.btn{
+  background-color: yellow;
+}
+
+.hidden{
+  display: none;
+}
