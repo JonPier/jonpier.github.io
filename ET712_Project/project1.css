@@ -1,0 +1,250 @@
+body {
+    background-color: black;
+  }
+
+p{
+    font-size: 125%;
+    font-family: Arial;
+    font-style: italic;
+  }
+
+.title{
+  padding: none;
+}
+
+.instructions{
+  margin: auto;
+  width: 400px;
+  padding-bottom: 10px;
+}
+#instruct{
+  background-color: black;
+  color: darkred;
+}
+
+.exit{
+  float: right;
+  margin-left: -5%;
+  margin-top: 700px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 15% auto;
+  padding:4px;
+  border: 3px outset darkred;
+  width: 45%;
+}
+
+/* The Close (x) Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#hintManPic{
+  max-width: 66px;
+  padding-left: none;
+}
+
+.hintButton:hover {
+  background-color: darkred;
+}
+
+.hintButton{
+  background-color: black;
+  border-color: black;
+}
+
+.countBox{
+
+    margin-left: 100px;
+    border-radius: 25px;
+    padding: 35px;
+    padding-bottom: 60px;
+    height: 150px;
+    border-style: solid;
+    border-color: darkred;
+    color: white;
+    float: left;
+}
+
+#resetButton{
+  border-radius: 25px;
+  font-family: Arial;
+  border-color: black;
+  align-items: center;
+  font-size: 18px;
+}
+
+.title{
+  margin: auto;
+  width: 45%;
+  padding-top: 22px;
+}
+
+input[type="checkbox"] {
+    content: url('pictures/jigsaw.png');
+    display:table-cell;
+    border-style: none;
+    width:100%;
+    height:275px;
+    border-color: black;
+}
+
+input.b1[type="checkbox"]:checked {
+    content: url('pictures/laser_trap1.jpg');
+}
+input.b2[type="checkbox"]:checked {
+    content: url('pictures/sand_trap1.jpg');
+}
+input.b3[type="checkbox"]:checked {
+    content: url('pictures/helmet_trap1.jpg');
+}
+input.b4[type="checkbox"]:checked {
+    content: url('pictures/candidates2.jpeg');
+}
+input.b5[type="checkbox"]:checked {
+    content: url('pictures/laser_trap1.jpg');
+}
+input.b6[type="checkbox"]:checked {
+    content: url('pictures/candidates1.jpeg');
+}
+input.b7[type="checkbox"]:checked {
+    content: url('pictures/helmet_trap2.jpg');
+}
+input.b8[type="checkbox"]:checked {
+    content: url('pictures/sand_trap1.jpg');
+}
+input.b9[type="checkbox"]:checked {
+    content: url('pictures/padlock.jpg');
+}
+
+input.b9:hover{
+  content: url('pictures/locked_door.jpg');
+}
+
+.pinkBox1{
+  margin: auto;
+  display: block;
+  border-style:none;
+  width:50%;
+  height:250px;
+  padding-bottom: 1.4%;
+}
+
+.box1{
+  display:table-cell;
+  width:32%;
+  height:275px;
+  border-color: black;
+}
+
+.box2{
+  display: table-cell;
+  width:31%;
+  height:275px;
+  border-color: black;
+}
+
+ .box3{
+  display: table-cell;
+  width: 33%;
+  height:275px;
+  border-color: black;
+}
+
+.pinkbox2{
+  margin-left:25%;
+  display: flex;
+  font-size: 24px;
+  border-style:none;
+  width:50%;
+  height:250px;
+  border-color: black;
+  padding-bottom: 1.4%;
+}
+
+.box4{
+  display: table-cell;
+  width:33%;
+  height:275px;
+  border-color: black;
+}
+
+.box5{
+  width:33%;
+  height:275px;
+  border-color: black;
+}
+
+.box6{
+  display: table-cell;
+  width: 34%;
+  height:275px;
+  border-color: black;
+}
+
+.pinkbox3{
+  margin: auto;
+  display: flex;
+  font-size: 24px;
+  width:50%;
+  height:250px;
+  border-color: black;
+  padding-bottom: 5px;
+
+  }
+
+.box7{
+    display: table-cell;
+    width:33.3%;
+    height:275px;
+    border-color: black;
+  }
+
+.box8{
+    display: table-cell;
+    width:33.3%;
+    height:275px;
+    border-color: black;
+  }
+
+.box9:hover img {
+    content: url('pictures/padlock.jpg');
+}
+
+.box9{
+    display:table-cell;
+    width:33.3%;
+    height:275px;
+    border-color: black;
+  }
+
+  #hint_size{
+    font-size: 25px;
+    font-style: normal;
+  }
