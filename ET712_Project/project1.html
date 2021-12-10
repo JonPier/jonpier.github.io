@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Jigsaw Game</title>
+    <link rel="stylesheet" href = "project1.css">
+
+  </head>
+
+    <body>
+
+      <div class="title"><img id="playGame"src="pictures/true_title.png" alt="title"></div>
+
+      <div class="instructions"><h3 id="instruct">CLICK THE CORRECT BOXES</h3></div>
+
+    <div class="musicBox">
+      <!-- <iframe id="vidPlay" src="https://www.youtube.com/embed/vhSHXGM7kgE" title="video" allowfullscreen >
+      </iframe> -->
+      <iframe id="vidPlay"
+       loading="lazy";
+       allow="autoplay";
+       allow="fullscreen";
+       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197007403&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+
+<div class=allDivs>
+  <div class="grid-container">
+        <div id="box1" class="box1"><input class="b1" type="checkbox"></div>
+        <div id="box2" class="box2"><input class="b2"type="checkbox"></div>
+        <div id="box3" class="box3"><input class="b3"type="checkbox"></div>
+        <div id="box4" class="box4"><input class="b4" type="checkbox"></div>
+        <div id="box5" class="box5"><input class="b5" type="checkbox"></div>
+        <div id="box6" class="box6"><input class="b6" type="checkbox"></div>
+        <div id="box7" class="box7"><input class="b7" type="checkbox"></div>
+        <div id="box8" class="box8"><input class="b8"type="checkbox"></div>
+        <div id="box9" class="box9"><input id="door_checkbox" class="b9" type="checkbox"></div>
+      <!-- </div> -->
+    </div>
+
+
+      <div class="exit">
+        <div id="countBox" class="countBox">
+            <p>Times Won</p>
+            <p id="winCount"></p>
+            <p>Times Lost</p>
+            <p id="loseCount"></p>
+        </div>
+        <button id="btn" class="hintButton"><img src="pictures/hint_questionmark.jpeg" id="hintManPic" alt="exit"><p id="hint_size"><strong>HINT</strong></p></button>
+      </div>
+</div>
+<div id="myModal" class="modal">
+  <!-- HINT Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="hintPic" src="pictures/hint.jpg" alt="hint_modal">
+    </div>
+</div>
+
+<div id="myModal2" class="modal2">
+
+    <div class="modal-content2">
+      <span class="close2">&times;</span>
+      <h1 id="h1Win">YOU WIN !</h1>
+      <img id="winPic" src="pictures/winning_image.jpg" alt="hint_modal2">
+    </div>
+</div>
+
+<div id="myModal3" class="modal3">
+    <div class="modal-content3">
+      <span class="close3">&times;</span>
+      <h1 id="h1Lose">YOU LOSE!</h1>
+      <img id="losePic" src="pictures/you_lose.jpg" alt="hint_modal3">
+    </div>
+</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="project1.js"> </script>
+    </body>
+
+
+    </html>

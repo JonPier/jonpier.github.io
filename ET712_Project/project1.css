@@ -1,0 +1,318 @@
+body {
+    background-color: black;
+  }
+
+p{
+    font-size: 125%;
+    font-family: Arial;
+    font-style: italic;
+  }
+
+
+.title{
+    margin: auto;
+    width: 50%;
+    padding-top: 22px;
+}
+
+#playGame{
+  width:100%;
+}
+
+.allDivs{
+  display: flex;
+  margin:auto;
+
+}
+.instructions{
+   padding-bottom: 2%;
+   display: block;
+   margin: auto;
+   width:50%;
+   text-align: center;
+   border-color: darkred;
+
+}
+
+#instruct{
+  background-color: black;
+  color: silver;
+  font-family: sans-serif;
+}
+
+.exit{
+  width: 14%;
+  float: right;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+.modal2 {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+#h1Win{
+  text-align: center;
+  font-size: 300%;
+  align-self: center;
+  color: red;
+}
+
+#h1Lose{
+  text-align: center;
+  font-size: 300%;
+  align-self: center;
+  color: red;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  align-items: center;
+  background-color: black;
+  margin: 15% auto;
+  padding:10px;
+  border: 3px outset darkred;
+  width: 53%;
+
+}
+
+.modal-content2 {
+  background-color: black;
+  margin: 15% auto;
+  padding:4px;
+  border: 3px outset darkred;
+  width: 50%;
+}
+
+.modal-content3 {
+  background-color: black;
+  margin: 15% auto;
+  padding:4px;
+  border: 3px outset darkred;
+  width: 50%;
+}
+
+
+#hintPic{
+   width: 100%;
+ }
+
+#winPic{
+  width: 100%;
+}
+
+#losePic{
+  width: 100%;
+}
+/* The Close (x) Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: red;
+  cursor: pointer;
+}
+.close3:hover,
+.close3:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#hintManPic{
+  max-width: 25%;
+  padding-left: none;
+
+}
+
+.hintButton:hover {
+  background-color: darkred;
+}
+
+.hintButton{
+  margin-top: 260%;
+  float: right;
+  background-color: black;
+  border-color: black;
+}
+
+.musicBox{
+    text-align: center;
+    width: 8%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10%;
+    border-radius:5%;
+    padding: none;
+    border-style: groove;
+    border-color: darkred;
+    color: silver;
+}
+
+.countBox{
+  text-align: center;
+  width: 55%;
+  float: right;
+  border-radius:5%;
+  padding: 7%;
+  border-style: groove;
+  border-color: darkred;
+  color: silver;
+  margin-right: 10%;
+}
+
+
+.grid-container {
+  gap: 11px 11px;
+  width: 70%;
+  margin-left: 15%;
+  padding-right: 15%;
+  display: grid;
+  grid: auto;
+  grid-template-areas:
+   "a b c"
+   "d e f"
+   "g h i";
+}
+
+/* eliminate default checkbox style */
+input[type=checkbox] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+  outline: none;
+	content: none;
+}
+input[type="checkbox"] {
+    border-radius: 2.5%;
+    content: url('pictures/jigsaw.png');
+    width:100%;
+    height:100%;
+    box-shadow: inset 0px 0px 40px 40px #DBA632;
+
+}
+input:hover {
+  border-color: darkred;
+  border-style: inset;
+}
+
+input.b1[type="checkbox"]:checked {
+    content: url('pictures/laser_trap1.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+
+input.b2[type="checkbox"]:checked {
+    content: url('pictures/sand_trap1.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b3[type="checkbox"]:checked {
+    content: url('pictures/helmet_trap1.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b4[type="checkbox"]:checked {
+    content: url('pictures/candidates2.jpeg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b5[type="checkbox"]:checked {
+    content: url('pictures/laser_trap1.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b6[type="checkbox"]:checked {
+    content: url('pictures/candidates1.jpeg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b7[type="checkbox"]:checked {
+    content: url('pictures/helmet_trap2.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b8[type="checkbox"]:checked {
+    content: url('pictures/sand_trap1.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+input.b9[type="checkbox"]:checked {
+    content: url('pictures/padlock.jpg');
+    border-color: darkred;
+    border-style: inset;
+}
+
+input.b9:hover{
+  content: url('pictures/locked_door.jpg');
+  border-color: darkred;
+  border-style: inset;
+}
+
+#vidPlay{
+  width: 100%;
+  border-style: none;
+}
+
+
+#hint_size{
+    margin: 0;
+    font-size: 22px;
+    font-style: normal;
+  }
