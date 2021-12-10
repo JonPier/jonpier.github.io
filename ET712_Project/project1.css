@@ -34,6 +34,11 @@ p{
 
 }
 
+#play_soundtrack{
+  color: red;
+
+}
+
 #instruct{
   background-color: black;
   color: silver;
@@ -192,6 +197,11 @@ p{
   border-color: black;
 }
 
+#reset_btn{
+  display: block;
+  width: 100%
+}
+
 .musicBox{
     text-align: center;
     width: 8%;
@@ -199,7 +209,7 @@ p{
     margin-left: 1%;
     margin-top: 10%;
     border-radius:5%;
-    padding: none;
+    padding: 0.5%;
     border-style: groove;
     border-color: darkred;
     color: silver;

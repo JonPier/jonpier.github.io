@@ -15,6 +15,7 @@ let tLose=document.getElementById("loseCount");
 let winC=0;
 let loseC=0;
 
+let reset_btn=document.getElementById("reset_btn");
 
 let compareArray=[];
 let compareArray2=[];
@@ -49,7 +50,6 @@ let tag=document.getElementsByTagName('input');
       countArray2.length=0;
       winC+=1;
       tWin.innerHTML=winC;
-      //location.reload(true);
       setTimeout(function () {
               alert('YOU ONLY NEED TO WIN ONCE!   GAME RELOADING...');
               location.reload(true);
@@ -173,8 +173,12 @@ window.addEventListener("click",function(event){
     }
 })
 
+//------Reset button
+  $("#reset_btn").click(function(){
+    location.reload(true);
+});
 
-//LOCKED  CORNER DOOR FUNCTIONALITY
+//-----locked door
 let door = document.getElementsByClassName('box9');
     let confirmIt = function (x) {
         if (!confirm('THIS DOOR IS LOCKED'));
